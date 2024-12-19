@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    .share-thoughts {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Fitness Hub</a>
+      </div>
+      <!-- Hamburger Menu Button (for mobile) -->
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactss.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="evault.html">Exercise Vault</a></li>
+        <li><a href="tdee.html">TDEE Calculator</a></li>
+        <li><a href="calcform.html">Weighted Plates Calculation Form</a></li>
+        <li><a href="social.html">Social Media App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Add message above the textarea with centered, larger and bold text -->
+    <div class="share-thoughts">
+      <p>Share your thoughts here!</p>
+    </div>
+
+    <div class="post-form">
+      <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+      <button id="submit-post">Post</button>
+    </div>
+
+    <div class="feed" id="feed">
+      <!-- Posts will appear here -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="hamburger.js"></script>
+</body>
+</html>
+
+
+

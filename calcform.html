@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weighted Plates Calculation Form</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+       <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Fitness Hub</a>
+            </div>
+            <!-- Hamburger Menu Button (for mobile) -->
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactss.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="evault.html">Exercise Vault</a></li>
+                <li><a href="tdee.html">TDEE Calculator</a></li>
+                <li><a href="calcform.html">Weighted Plates Calculation Form</a></li>
+                <li><a href="social.html">Social Media App</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-6 row-heading">Plate Type</div>
+        <div class="col-3 row-heading">Quantity</div>
+        <div class="col-2 row-heading">Price</div>
+      </div>
+
+      <!-- 45 lbs Plates -->
+      <div class="row">
+        <div class="col-6">1. 45 lbs Plates</div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_45lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_45lbs"/>
+        </div>
+      </div>
+
+      <!-- 35 lbs Plates -->
+      <div class="row my-3">
+        <div class="col-6">2. 35 lbs Plates</div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_35lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_35lbs"/>
+        </div>
+      </div>
+
+      <!-- 25 lbs Plates -->
+      <div class="row my-3">
+        <div class="col-6">3. 25 lbs Plates</div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_25lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_25lbs"/>
+        </div>
+      </div>
+
+      <!-- 10 lbs Plates -->
+      <div class="row my-3">
+        <div class="col-6">4. 10 lbs Plates</div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_10lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_10lbs"/>
+        </div>
+      </div>
+
+      <!-- Total Price -->
+      <div class="row my-4">
+        <div class="col-9 text-right total">Total</div>
+        <div class="col-2 total-val"><span id="total_value">0</span></div>
+      </div>
+
+      <!-- Purchase Button -->
+      <div class="row my-4">
+        <div class="col-12 text-center">
+          <button id="purchase_button" class="purchase-btn">Purchase</button>
+        </div>
+      </div>
+    </div>
+	
+	 <footer>
+        <p>© 2024 David Rodriguez | Fitness Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="calcform.js"></script>
+	<script src="hamburger.js"></script>
+  </body>
+</html>

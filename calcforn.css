@@ -1,0 +1,31 @@
+/* Styling for row-heading, total, and total-val */
+.row-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.total {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.total-val {
+  font-size: 2rem;
+  border: 1px solid #ccc; /* Add a border if desired */
+}
+
+/* Media Query for responsive layout */
+@media (max-width: 768px) {
+  .row-heading {
+    font-size: 1.1rem; /* Decrease font size for smaller screens */
+  }
+
+  .total {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  .total-val {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+    text-align: center; /* Center-align text for better readability on small screens */
+  }
+}
